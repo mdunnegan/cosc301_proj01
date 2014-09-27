@@ -5,6 +5,12 @@
 
 
 /* your function declarations associated with the list */
+typedef struct node {
+	int value;
+	struct node *next;
+} node;
 
+void list_insert(int num, node **head);
+void print_list(const node *head);
 
 #endif // __LIST_H__
